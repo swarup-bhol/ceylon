@@ -1,0 +1,174 @@
+{
+  "columns": [
+    {
+      "name": "id",
+      "displayName":"Id",
+      "type": 0
+    },
+    {
+      "name": "type",
+      "displayName":"Type",
+      "type": 0
+    },
+    {
+      "name": "category",
+      "displayName":"Category",
+      "type": 0
+    },
+    {
+      "name": "relevence",
+      "displayName":"Relevence",
+      "type": 0
+    },
+    {
+      "name": "contact",
+      "displayName":"Contact",
+      "type": 0
+    },
+    {
+      "name": "language",
+      "displayName":"Language",
+      "type": 0
+    },
+    {
+      "name": "newsletter",
+      "displayName":"Newsletter",
+      "type": 0
+    },
+    {
+      "name": "brand",
+      "displayName":"Brand",
+      "type": 0
+    },
+    {
+      "name": "company",
+      "displayName":"Company",
+      "type": 0
+    },
+    {
+      "name": "gender",
+      "displayName":"Gender",
+      "type": 0
+    },
+    {
+      "name": "title",
+      "displayName":"Title",
+      "type": 0
+    },
+    {
+      "name": "salutation",
+      "displayName":"Salutation",
+      "type": 0
+    },
+    {
+      "name": "invoiceAddress.id",
+      "displayName":"Invoice Address Id",
+      "type": 0
+    },
+    {
+      "name": "invoiceAddress.street",
+      "displayName":"Invoice Address Street",
+      "type": 0
+    },
+    {
+      "name": "invoiceAddress.zip",
+      "displayName":"Invoice Address Zip",
+      "type": 0
+    },
+    {
+      "name": "invoiceAddress.residence",
+      "displayName":"Invoice Address Residence",
+      "type": 0
+    },
+    {
+      "name": "invoiceAddress.country",
+      "displayName":"Invoice Address Country",
+      "type": 0
+    },
+    {
+      "name": "Delivery Address Id",
+      "displayName":"",
+      "type": 0
+    },
+    {
+      "name": "Delivery Address Street",
+      "displayName":"",
+      "type": 0
+    },
+    {
+      "name": "deliveryAddress.zip",
+      "displayName":"Delivery Address Zip",
+      "type": 0
+    },
+    {
+      "name": "deliveryAddress.residence",
+      "displayName":"Delivery Address Residence",
+      "type": 0
+    },
+    {
+      "name": "deliveryAddress.country",
+      "displayName":"Delivery Address Country",
+      "type": 0
+    },
+    {
+      "name": "vatId",
+      "displayName":"VAT Id",
+      "type": 0
+    },
+    {
+      "name": "taxRegion",
+      "displayName":"Tax Region",
+      "type": 0
+    },
+    {
+      "name": "companyTelephone",
+      "displayName":"Company Telephone",
+      "type": 0
+    },
+    {
+      "name": "companyMobile",
+      "displayName":"Company Mobile",
+      "type": 0
+    },
+    {
+      "name": "companyMail",
+      "displayName":"Company Mail",
+      "type": 0
+    },
+    {
+      "name": "url",
+      "displayName":"URL",
+      "type": 0
+    },
+    {
+      "name": "pocType",
+      "displayName":"Point of Contact Type",
+      "type": 0
+    },
+    {
+      "name": "pocLocation",
+      "displayName":"Point of Contact Location",
+      "type": 0
+    },
+    {
+      "name": "focus",
+      "displayName":"Focus",
+      "type": 0
+    },
+    {
+      "name": "note",
+      "displayName":"Note",
+      "type": 0
+    },
+    {
+      "name": "dateOfListing",
+      "displayName":"Date Of Listing",
+      "type": 0
+    },
+    {
+      "name": "lastChanged",
+      "displayName":"Last Changed",
+      "type": 0
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+image: docker
+
+
+services:
+  - postgres:latest
+  - docker:dind
+
+variables:
+  # When using dind, it's wise to use the overlayfs driver for
+  # improved performance.
+  DOCKER_DRIVER: overlay2
+
+stages:
+  - build
+  - publish
+
+maven-build:
+  image: maven:3-jdk-8
+  stage: build
+  script: "mvn clean install -B -DskipTests"
+  artifacts:
+    paths:
+      - "target"
+
+publish:
+  stage: publish
+  script:
+    - "apk add maven"
+    - "docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY"
+    - "mvn dockerfile:build"
+    - "mvn dockerfile:push"
+  only:
+    - master

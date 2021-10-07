@@ -1,0 +1,42 @@
+{
+	"contactOf" : {
+		"index" : 10,
+		"type" : "string"
+	},
+	"invoice" : {
+		"index" : 8,
+		"type" : "string"
+	},
+	"invoiceDate" : {
+		"index" : 2,
+		"type" : "date"
+	},
+	"invoiceNo" : {
+		"index" : 9,
+		"type" : "number"
+	},
+	"margin" : {
+		"index" : 35,
+		"type" : "number"
+	},
+	"name" : {
+		"index" : 10,
+		"type" : "string"
+	},
+	"paymentDate" : {
+		"index" : 3,
+		"type" : "date"
+	},
+	"status" : {
+		"index" : 1,
+		"type" : "string"
+	},
+	"transferDate" : {
+		"index" : 4,
+		"type" : "date"
+	},
+	"year" : {
+		"index" : 0,
+		"type" : "number"
+	}
+}

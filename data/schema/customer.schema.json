@@ -1,0 +1,114 @@
+{
+	"brand" : {
+		"index" : 7,
+		"type" : "string"
+	},
+	"category" : {
+		"index" : 2,
+		"type" : "string"
+	},
+	"company" : {
+		"index" : 8,
+		"type" : "string"
+	},
+	"companyMail" : {
+		"index" : 42,
+		"type" : "string"
+	},
+	"companyMobile" : {
+		"index" : 41,
+		"type" : "string"
+	},
+	"companyTelephone" : {
+		"index" : 40,
+		"type" : "string"
+	},
+	"contact" : {
+		"index" : 4,
+		"type" : "string"
+	},
+	"dateOfListing" : {
+		"index" : 48,
+		"type" : "date"
+	},
+	"deliveryAddress_country" : {
+		"index" : 37,
+		"type" : "string"
+	},
+	"deliveryAddress_residence" : {
+		"index" : 36,
+		"type" : "string"
+	},
+	"deliveryAddress_street" : {
+		"index" : 34,
+		"type" : "string"
+	},
+	"deliveryAddress_zip" : {
+		"index" : 35,
+		"type" : "number"
+	},
+	"focus" : {
+		"index" : 46,
+		"type" : "string"
+	},
+	"gender" : {
+		"index" : 9,
+		"type" : "string"
+	},
+	"id" : {
+		"index" : 0,
+		"type" : "string"
+	},
+	"language" : {
+		"index" : 5,
+		"type" : "string"
+	},
+	"lastChanged" : {
+		"index" : 49,
+		"type" : "string"
+	},
+	"newsletter" : {
+		"index" : 6,
+		"type" : "string"
+	},
+	"note" : {
+		"index" : 47,
+		"type" : "string"
+	},
+	"pocLocation" : {
+		"index" : 45,
+		"type" : "string"
+	},
+	"pocType" : {
+		"index" : 44,
+		"type" : "string"
+	},
+	"relevence" : {
+		"index" : 3,
+		"type" : "string"
+	},
+	"salutation" : {
+		"index" : 11,
+		"type" : "string"
+	},
+	"taxRegion" : {
+		"index" : 39,
+		"type" : "string"
+	},
+	"title" : {
+		"index" : 10,
+		"type" : "string"
+	},
+	"type" : {
+		"index" : 1,
+		"type" : "string"
+	},
+	"url" : {
+		"index" : 43,
+		"type" : "string"
+	},
+	"vatId" : {
+		"index" : 38,
+		"type" : "string"
+	}
+}

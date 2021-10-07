@@ -1,0 +1,224 @@
+{
+"columns": [
+  {
+    "name": "uniqueId",
+    "displayName":"Unique Id",
+    "type": "string"
+  },
+  {
+    "name": "typeShort",
+    "displayName":"Type Short",
+    "type": "string"
+  },
+  {
+    "name": "type",
+    "displayName":"Type",
+    "type": "string"
+  },
+  {
+    "name": "comment",
+    "displayName":"Comment",
+    "type": "string"
+  },
+  {
+    "name": "cts",
+    "displayName":"Cts",
+    "type": "numeric"
+  },
+  {
+    "name": "qty",
+    "displayName":"Qty",
+    "type": "numeric"
+  },
+  {
+    "name": "color",
+    "displayName":"Color",
+    "type": "string"
+  },
+  {
+    "name": "shapecut",
+    "displayName":"Shape Cut",
+    "type":  "string"
+  },
+  {
+    "name": "dimentions",
+    "displayName":"Dimentions",
+    "type":  "string"
+  },
+  {
+    "name": "origin",
+    "displayName":"Origin",
+    "type":  "string"
+  },
+  {
+    "name": "report",
+    "displayName":"Report",
+    "type":  "string"
+  },
+  {
+    "name": "reportNo",
+    "displayName":"Report No",
+    "type": "numeric"
+  },
+  {
+    "name": "Lot Batch Set Pair",
+    "displayName":0,
+    "type":  "string"
+  },
+  {
+    "name": "import_id",
+    "displayName":"Import",
+    "type":  "string"
+  },
+  {
+    "name": "note",
+    "displayName":"Note",
+    "type":  "string"
+  },
+  {
+    "name": "pics",
+    "displayName":"Pictures",
+    "type":  "string"
+  },
+  {
+    "name": "saleInformation.sold",
+    "displayName":"Sold",
+    "type":  "string"
+  },
+  {
+    "name": "saleInformation.partiallySold",
+    "displayName":"Partially Sold",
+    "type":  "string"
+  },
+  {
+    "name": "saleInformation.away",
+    "displayName":"Away",
+    "type":  "string"
+  },
+  {
+    "name": "saleInformation.awayTill",
+    "displayName":"Away Till",
+    "type": "date"
+  },
+  {
+    "name": "saleInformation.saleOptions",
+    "displayName":"Sale Options",
+    "type": "string"
+  },
+  {
+    "name": "saleInformation.offered",
+    "displayName":"Offered",
+    "type": "numeric"
+  },
+  {
+    "name": "saleInformation.offeredPriceEuroPerCt",
+    "displayName":"Offered Price Euro Per Ct",
+    "type": "numeric"
+  },
+  {
+    "name": "saleInformation.reserved",
+    "displayName":"Reserved",
+    "type": "string"
+  },
+  {
+    "name": "saleInformation.reservedTill",
+    "displayName":"Reserved Till",
+    "type":  "date"
+  },
+  {
+    "name": "saleInformation.requestNo",
+    "displayName":"Request No",
+    "type": "numeric"
+  },
+  {
+    "name": "saleInformation.returns",
+    "displayName":"Returns",
+    "type": "numeric"
+  },
+  {
+    "name": "saleInformation.qty",
+    "displayName":"Q",
+    "type": "numeric"
+  },
+  {
+    "name": "price.buyingPriceLkr",
+    "displayName":"Buying Price LKR",
+    "type": "numeric"
+  },
+  {
+    "name": "price.buyingPriceLkrPerCarat",
+    "displayName":"Buying Price LKR Per Carat",
+    "type": "numeric"
+  },
+  {
+    "name": "price.buyingPriceEuro",
+    "displayName":"Buying Price Euro",
+    "type": "numeric"
+  },
+  {
+    "name": "price.buyingPriceEuroPerCarat",
+    "displayName":"Buying Price Euro Per Carat",
+    "type": "numeric"
+  },
+  {
+    "name": "price.privatePriceEuro",
+    "displayName":"Private Price Euro",
+    "type": "numeric"
+  },
+  {
+    "name": "price.privatePriceEuroPerCarat",
+    "displayName":"Private Price Euro Per Carat",
+    "type": "numeric"
+  },
+  {
+    "name": "price.privateProfitEuro",
+    "displayName":"Private Profit Euro",
+    "type": "numeric"
+  },
+  {
+    "name": "price.privateProfitPercentage",
+    "displayName":"Private Profit Percentage",
+    "type": "numeric"
+  },
+  {
+    "name": "price.salePriceEuro",
+    "displayName":"Sale Price Euro",
+    "type": "numeric"
+  },
+  {
+    "name": "price.saleProfitPercentage",
+    "displayName":"Sale Profit Percentage",
+    "type": "numeric"
+  },
+  {
+    "name": "price.minPriceEuro",
+    "displayName":"Min Price Euro",
+    "type": "numeric"
+  },
+  {
+    "name": "price.minPriceEuroPerCarat",
+    "displayName":"Min Price Euro Per Carat",
+    "type": "numeric"
+  },
+  {
+    "name": "price.minProfit",
+    "displayName":"Min Profit",
+    "type": "numeric"
+  },
+  {
+    "name": "price.minProfitPercentage",
+    "displayName":"Min Profit Percentage",
+    "type": "numeric"
+  },
+  {
+    "name": "price.chinaSellingPriceRmb",
+    "displayName":"China Selling Price RMB",
+    "type": "numeric"
+  },
+  {
+    "name": "price.chinaSellingPriceRmbCarat",
+    "displayName":"China Selling Price RMB Carat",
+    "type": "numeric"
+  }
+]
+}

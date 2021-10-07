@@ -1,0 +1,14 @@
+# production overrides
+version: '3.4'
+
+services:
+  app:
+    image: registry.gitlab.com/ceylonsmunich/service:latest
+    restart: always
+    volumes:
+      - ./config:/config
+      - ./logs:/logs
+
+  postgres:
+    restart: always
+

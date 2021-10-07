@@ -1,0 +1,26 @@
+{
+  "product": {
+    "config": "/api/configs/product.json",
+    "create": "",
+    "update": "/api/products/update",
+    "read": "/api/products",
+    "delete": "",
+    "title": "Product Information"
+  },
+  "sales": {
+    "config": "/api/configs/sale.json",
+    "create": "",
+    "update": "/api/sales/update",
+    "read": "/api/sales",
+    "delete": "",
+    "title": "Sales Information"
+  },
+  "customer": {
+    "config": "/api/configs/customer.json",
+    "create": "",
+    "update": "/api/customers/update",
+    "read": "/api/customers",
+    "delete": "",
+    "title": "Customer Information"
+  }
+}

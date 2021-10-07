@@ -1,0 +1,119 @@
+{
+  "columns": [
+    {
+      "name": "year",
+      "displayName":"Year",
+      "type": 0
+    },
+    {
+      "name": "invoiceDate",
+      "displayName":"Invoice Date",
+      "type": 0
+    },
+    {
+      "name": "paymentDate",
+      "displayName":"Payment Date",
+      "type": 0
+    },
+    {
+      "name": "transferDate",
+      "displayName":"Transfer Date",
+      "type": 0
+    },
+    {
+      "name": "contactOf",
+      "displayName":"Contact Of",
+      "type": 0
+    },
+    {
+      "name": "name",
+      "displayName":"Name",
+      "type": 0
+    },
+    {
+      "name": "salesChannel",
+      "displayName":"Sales Channel",
+      "type": 0
+    },
+    {
+      "name": "invoiceNo",
+      "displayName":"Invoice No.",
+      "type": 0
+    },
+    {
+      "name": "item",
+      "displayName":"Item",
+      "type": 0
+    },
+    {
+      "name": "grossSum",
+      "displayName":"Gross Sum",
+      "type": 0
+    },
+    {
+      "name": "mwStVat",
+      "displayName":"MwSt.(VAT)",
+      "type": 0
+    },
+    {
+      "name": "netBalance",
+      "displayName":"Net Balance",
+      "type": 0
+    },
+    {
+      "name": "deposit",
+      "displayName":"Deposit",
+      "type": 0
+    },
+    {
+      "name": "remainder",
+      "displayName":"Remainder",
+      "type": 0
+    },
+    {
+      "name": "cash",
+      "displayName":"Cash",
+      "type": 0
+    },
+    {
+      "name": "transfer",
+      "displayName":"Transfer",
+      "type": 0
+    },
+    {
+      "name": "invoice",
+      "displayName":"Invoice",
+      "type": 0
+    },
+    {
+      "name": "status",
+      "displayName":"Status",
+      "type": 0
+    },
+    {
+      "name": "itemId",
+      "displayName":"Item ID",
+      "type": 0
+    },
+    {
+      "name": "buyingValue",
+      "displayName":"Buying Value",
+      "type": 0
+    },
+    {
+      "name": "salePrice",
+      "displayName":"Sale Price",
+      "type": 0
+    },
+    {
+      "name": "profit",
+      "displayName":"Profit",
+      "type": 0
+    },
+    {
+      "name": "margin",
+      "displayName":"Margin",
+      "type": 0
+    }
+  ]
+}

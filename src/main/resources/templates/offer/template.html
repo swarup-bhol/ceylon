@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        tr{
+            border-bottom: 1px solid #bbb;
+        }
+        tfoot > tr{
+            border-bottom: none;
+        }
+        td{
+            border-right: 1px solid #bbb;
+            padding: 12px;
+        }
+        tbody{
+            border: 1px solid #bbb;
+        }
+        thead{
+            border: 1px solid #bbb;
+        }
+        thead > tr > td{
+            background-color: #000c17;
+            color: white;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        *, ::after, ::before {
+            box-sizing: border-box;
+        }
+        .footer{
+            border-bottom: 1px solid #bbb;
+            color: #000000;
+            background-color: #d6d3d3;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3>Ceylon Munich</h3>
+    <hr/>
+    <p>
+        Dear Mr / Mrs XXXXXX,
+    </p>
+    <p>
+        as desired you will receive our offer below.
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <td>Description</td>
+                <td>No</td>
+                <td>Qty</td>
+                <td>Cts</td>
+                <td>€/Ct</td>
+                <td>Price</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Saphire</td>
+                <td>1001</td>
+                <td>3</td>
+                <td>6.98</td>
+                <td>1200</td>
+                <td>8400</td>
+            </tr>
+            <tr>
+                <td>Saphire</td>
+                <td>1001</td>
+                <td>3</td>
+                <td>6.98</td>
+                <td>1200</td>
+                <td>8400</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="3"></td>
+            <td colspan="2" class="footer">Total</td>
+            <td class="footer">16800</td>
+        </tfoot>
+    </table>
+    <hr/>
+    <p>We are happy to support you with our fine & fair gemstones.
+    </p><p>
+        If you have any questions, please do not hesitate to contact us.
+    </p><p>
+        With best regards</p>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="https://www.thymeleaf.org" style="width: 0; height: 0">
+<head>
+    <meta charset="UTF-8"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" type="text/css"/>
+    <title  th:text="'INV-' + ${#numbers.formatInteger(invoice_id,6)}" ></title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Lato;
+        }
+
+        @font-face {
+            font-family: Lato;
+            src:url("../../static/fonts/Lato-Regular.ttf") ;
+            -fs-pdf-font-embed: embed;
+            -fs-pdf-font-encoding: Identity-H;
+        }
+        @page  {
+            size: 2.5cm 2.5cm;
+            padding: 0.5mm;
+            margin: 0;
+            page-break-before: avoid;
+            page-break-after: avoid;
+        }
+        html{
+            background-color: #bfbfbf;
+        }
+        .label{
+            position: relative;
+        }
+        .label div{
+            position: absolute;
+        }
+        .goods{
+            font-size: 8px;
+            top: 2mm;
+            width: 100%;
+            text-align: center;
+        }
+        .comment{
+            font-size: 5px;
+            top: 5mm;
+            left: 1mm
+        }
+        .id{
+            font-size: 5px;
+            top: 5mm;
+            right: 1mm
+        }
+        .qty{
+            font-size: 5px;
+            top: 12mm;
+            right: 20.5mm
+        }
+        .dimensions{
+            font-size: 5px;
+            top: 7.5mm;
+            width: 100%;
+            text-align: center;
+        }
+
+        .type{
+            font-size: 5px;
+            top: 11mm;
+            left: 19.5mm;
+        }
+        .origin{
+            font-size: 5px;
+            transform: rotate(-90deg);
+            transform-origin: left top;
+            bottom: 0.5mm;
+            left: 1mm;
+        }
+        .report{
+            font-size: 5px;
+            transform: rotate(90deg);
+            transform-origin: right top;
+            bottom: 0.5mm;
+            right: 1mm;
+        }
+        .cts{
+            font-size: 8px;
+            top: 4.5mm;
+            width: 100%;
+            text-align: center;
+        }
+        .qr{
+            width:14mm;
+            height: 14mm;
+            left: 5mm;
+            top: 10mm;
+        }
+
+
+
+    </style>
+</head>
+<body style="width: 24mm; height: 24mm">
+   <!-- <div th:each="page,p_itr: ${pages}" style="position: relative; top: 0; left: 0;width: 25mm;height: 25mm">
+        <img th:src="${page}" style="width:25mm; height:25mm;"/>
+    </div>-->
+   <!-- <div class="label" style="position: relative; top: 0; left: 0;width: 25mm;height: 25mm; background-color: white">
+       <div class="goods">Padaparadscha</div>
+       <div class="comment">NH</div>
+       <div class="qty">10</div>
+       <div class="cts">20.88 cts</div>
+       <div class="id">2002</div>
+       <div class="type">SRub</div>
+       <div class="dimensions">11.22 x 33.45 x 99.44</div>
+       <div class="qr"></div>
+       <div class="origin">Ceylon</div>
+       <div class="report">DSEF</div>
+
+   </div>-->
+   <div th:each="page,p_itr: ${pages}"  class="label" style="position: relative; top: 0; left: 0;width: 24mm;height: 24mm; background-color: white">
+       <div class="goods" th:text="${page.goods}"></div>ghj
+       <div class="comment" th:text="${page.comment}"></div>
+       <div class="qty" th:text="${page.qty}"></div>
+       <div class="cts" th:text="${#numbers.formatDecimal(page.cts, 2,2)} + ' Cts'"></div>
+       <div class="id" th:text="${page.id}"></div>
+       <div class="type" th:text="${page.type}"></div>
+       <div class="dimensions" th:text="${page.dimentions}"></div>
+       <img style="position: absolute" class="qr" width="14mm" height="14mm" th:src="${page.qr}"></img>
+
+       <div class="origin" th:text="${page.origin}"></div>
+       <div class="report" th:text="${page.report}"></div>
+
+   </div>
+</body>
+</html>

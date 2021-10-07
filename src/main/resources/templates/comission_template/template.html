@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="https://www.thymeleaf.org" style="width: 0; height: 0">
+<head>
+    <meta charset="UTF-8"/>
+    <title th:text="'CON-' + ${#numbers.formatInteger(invoice_id,6)}" ></title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" type="text/css"/>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @page  {
+            size: A4;
+            margin: 0;
+            page-break-before: avoid;
+            page-break-after: avoid;
+        }
+
+        @font-face {
+            font-family: Lato;
+            src:url("../../static/fonts/Lato-Regular.ttf") ;
+            -fs-pdf-font-embed: embed;
+            -fs-pdf-font-encoding: Identity-H;
+        }
+
+
+        .body_1{
+            font-size: 10px;
+            font-family: Lato;
+            background-color: transparent;
+            color: #231F20;
+            height: 22px !important;
+            position: absolute;
+        }
+        .body_2{
+            font-size: 10px;
+            font-family: Lato;
+            background-color: transparent;
+            color: #231F20;
+            height: 18px !important;
+            position: absolute;
+        }
+        .body_3{
+            font-size: 11px;
+            font-family: Lato;
+            background-color: transparent;
+            color: #231F20;
+            height: 6mm !important;
+            position: absolute;
+            vertical-align: middle;
+        }
+        body_3{
+            font-size: 11px;
+            font-family: Lato;
+            background-color: transparent;
+            font-weight: bold;
+            color: #231F20;
+            height: 6mm !important;
+            position: absolute;
+            vertical-align: middle;
+        }
+        .no-bg{
+            background-color: transparent !important;
+        }
+    </style>
+</head>
+<body style="width: 210mm; height: 297mm">
+    <div th:each="page,p_itr: ${pages}" style="position: relative; top: 0; left: 0;width: 210mm;height: 297mm">
+        <img th:src="@{classpath:static/images/invoice/CON-EN.jpg}"  style="width: 210mm; height: 297mm; position: absolute; top: 0; left: 0;"/>
+        <section id="customer">
+            <div th:text=" ${customer.company}" class="body_1" style="top: 74mm; left: 24mm; min-width: 107px"></div>
+            <div th:text="${customer.firstName}  + ' ' + ${customer.name}" class="body_1" style="top: 78mm; left: 24mm; min-width: 107px"></div>
+            <div th:text="${customer.street}" class="body_2" style="top: 82mm; left: 24mm; min-width: 107px;"></div>
+            <div th:text="${customer.zip} + ' ' + ${customer.residence}" class="body_2" style="top: 86mm; left: 24mm; min-width: 107px; "></div>
+            <div th:text="${customer.country}" class="body_2" style="top: 90mm; left: 24mm; min-width: 107px; "></div>
+            <div th:text="${customer.vatId}" class="body_2" style="top: 94mm; left: 24mm; min-width: 107px;"></div>
+        </section>
+        <section th:each="row,itr: ${page.rows}">
+            <div class="body_3" th:style="'top:' + (${itr.index * 6.8} + 114)+ 'mm; left: 32mm;min-width: 200px;' + ${row.style}" th:text="${row.desc}"></div>
+            <div class="body_3 no-bg" th:style="'top:' + (${itr.index * 6.8} + 114)+ 'mm; right: 108mm; min-width: 80px; text-align: right;' + ${row.style}" th:text="${ row.no}"></div>
+            <div class="body_3 no-bg" th:style="'top:' + (${itr.index * 6.8} + 114)+ 'mm; right: 95mm; min-width: 40px; text-align: right;' + ${row.style}" th:text="${row.qty}"></div>
+            <div class="body_3 no-bg" th:style="'top:' + (${itr.index * 6.8} + 114)+ 'mm; right: 76mm; min-width: 60px; text-align: right;' + ${row.style}" th:text="${row.cts}"></div>
+            <div class="body_3 no-bg" th:style="'top:' + (${itr.index * 6.8} + 114)+ 'mm; right: 56mm; min-width: 60px; text-align: right;' + ${row.style}" th:text="${row.ppc}"></div>
+            <div class="body_3 no-bg" th:style="'top:' + (${itr.index * 6.8} + 114)+ 'mm; right: 34mm; min-width: 60px; text-align: right;' + ${row.style}" th:text="${row.price}"></div>
+        </section>
+        <section>
+            <div th:text="${date}" class="body_2" style="top: 79mm; right: 25mm; min-width: 20mm; text-align: right"></div>
+            <div th:text="'CON-' + ${#numbers.formatInteger(invoice_id,6)}" class="body_2" style="top: 83mm; right: 25mm; min-width: 20mm;text-align: right"></div>
+            <div th:text="${customer.companyId}" class="body_2" style="top: 86.5mm; right: 25mm; min-width: 20mm;text-align: right"></div>
+            <div class="body_2" style="top: 90mm; right: 25mm; min-width: 20mm;text-align: right" th:text="${p_itr.index + 1} + '/' + ${#numbers.formatInteger(pageCount,2)}"></div>
+        </section>
+        <section>
+            <div th:text="${due_date}" class="body_3" style="top: 186mm; left: 129mm; min-width: 20mm; text-align: right;font-size:10px !important"></div>
+        </section>
+    </div>
+</body>
+</html>

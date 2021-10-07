@@ -1,0 +1,12 @@
+# development overrides
+version: '3.4'
+
+services:
+  app:
+    build: .
+    image: service:latest
+    environment:
+      - WEBPACKER_DEV_SERVER_HOST=0.0.0.0
+    volumes:
+      - ./src/main/resources/config:/config
+

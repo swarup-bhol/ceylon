@@ -1,0 +1,13 @@
+
+@page {
+    size: A4;
+    margin: 10mm;
+
+}
+@media print {
+    html, body {
+        width: 210mm;
+        height: 297mm;
+    }
+    body {-webkit-print-color-adjust: unset;}
+}

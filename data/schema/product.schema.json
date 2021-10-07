@@ -1,0 +1,118 @@
+{
+	"color" : {
+		"index" : 16,
+		"type" : "string"
+	},
+	"comment" : {
+		"index" : 13,
+		"type" : "string"
+	},
+	"cts" : {
+		"index" : 14,
+		"type" : "number"
+	},
+	"dimentions" : {
+		"index" : 18,
+		"type" : "string"
+	},
+	"import_id" : {
+		"index" : 25,
+		"type" : "string"
+	},
+	"lotBatchSetPair" : {
+		"index" : 24,
+		"type" : "string"
+	},
+	"note" : {
+		"index" : 27,
+		"type" : "string"
+	},
+	"origin" : {
+		"index" : 19,
+		"type" : "string"
+	},
+	"buyPrice" : {
+		"index" : 29,
+		"type" : "number"
+	},
+	"minPrice" : {
+		"index" : 42,
+		"type" : "number"
+	},
+	"privatePrice" : {
+		"index" : 34,
+		"type" : "number"
+	},
+	"sellPrice" : {
+		"index" : 38,
+		"type" : "number"
+	},
+	"qty" : {
+		"index" : 15,
+		"type" : "number"
+	},
+	"report" : {
+		"index" : 20,
+		"type" : "string"
+	},
+	"reportNo" : {
+		"index" : 21,
+		"type" : "number"
+	},
+	"saleInformation_away" : {
+		"index" : 2,
+		"type" : "string"
+	},
+	"saleInformation_awayTill" : {
+		"index" : 3,
+		"type" : "date"
+	},
+	"saleInformation_offered" : {
+		"index" : 6,
+		"type" : "number"
+	},
+	"saleInformation_offeredPriceEuroPerCt" : {
+		"index" : 7,
+		"type" : "number"
+	},
+	"saleInformation_partiallySold" : {
+		"index" : 1,
+		"type" : "string"
+	},
+	"saleInformation_requestNo" : {
+		"index" : 26,
+		"type" : "number"
+	},
+	"saleInformation_reserved" : {
+		"index" : 8,
+		"type" : "boolean"
+	},
+	"saleInformation_reservedTill" : {
+		"index" : 9,
+		"type" : "date"
+	},
+	"saleInformation_returns" : {
+		"index" : 28,
+		"type" : "number"
+	},
+	"saleInformation_saleOptions" : {
+		"index" : 5,
+		"type" : "string"
+	},
+	"saleInformation_sold" : {
+		"index" : 0,
+		"type" : "string"
+	},
+	"shapecut" : {
+		"index" : 17,
+		"type" : "string"
+	},
+	"type" : {
+		"index" : 12,
+		"type" : "string"
+	},
+	"uniqueId" : {
+		"index" : 10,
+		"type" : "string"
+	}
+}
