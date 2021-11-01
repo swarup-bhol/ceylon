@@ -3,9 +3,10 @@ import Dashboard from "./components/Dashboard";
 import {BrowserRouter as Router, Route, Switch, useHistory} from "react-router-dom";
 import {SignInView} from "./auth/auth";
 import {authProps} from "./config/aws";
+import "antd/dist/antd.css";
 
 function App() {
-    return <React.Fragment>
+    return <React.Fragment>        
         <Router>
             <Switch>
                 <Route path="/signIn">
